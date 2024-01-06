@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(Photo/favpng_grey-polygon-desktop-wallpaper-wallpaper.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    user-select: none;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 7%;
+    animation:slide-in-fwd-tl 2s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+@keyframes slide-in-fwd-tl{0%{transform:translateZ(-1400px) translateY(-800px) translateX(-1000px);opacity:0}100%{transform:translateZ(0) translateY(0) translateX(0);opacity:1}}
+
+
+header nav a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin: 0 20px;
+    transition: all 0.3s ease-in;
+    animation:bounce-in-right 5s both;
+}
+
+.bar {
+    display: none;
+}
+
+@keyframes bounce-in-right{0%{transform:translateX(600px);animation-timing-function:ease-in;opacity:0}38%{transform:translateX(0);animation-timing-function:ease-out;opacity:1}55%{transform:translateX(68px);animation-timing-function:ease-in}72%{transform:translateX(0);animation-timing-function:ease-out}81%{transform:translateX(32px);animation-timing-function:ease-in}90%{transform:translateX(0);animation-timing-function:ease-out}95%{transform:translateX(8px);animation-timing-function:ease-in}100%{transform:translateX(0);animation-timing-function:ease-out}}
+
+
+header nav a:hover {
+    color: rgb(198, 198, 198);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+section img {
+    width: 50%;
+    position: absolute;
+    transform: rotate(-20deg);
+    top: 40px;
+    left: 300px;
+    z-index: 2;
+    animation:slide-in-top 2s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+@keyframes slide-in-top{0%{transform:translateY(-1000px);opacity:1}100%{transform:translateY(-20deg);opacity:1}}
+
+h1 {
+    max-width: auto;
+    text-align: center;
+    font-family: 'Nova Square', sans-serif;
+    font-size: 100px;
+    margin-top: 25px;
+    animation:slide-in-left 2.3s cubic-bezier(.25,.46,.45,.94) both
+}
+
+@keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:1}100%{transform:translateX(0);opacity:1}}
+
+button {
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    transition: all 0.7s;
+    animation:slide-in-fwd-center 2.3s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+@keyframes slide-in-fwd-center{
+    0% {transform:translateZ(-1400px);
+        opacity: 0}100%{transform:translateZ(0);opacity:1}}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.social a  {
+    margin: 0 7px;
+    animation:slide-in-bottom 2.5s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+@keyframes slide-in-bottom{0%{transform:translateY(1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
+
+@media screen and (max-width : 600px) {
+    body {
+        background-image: url(Photo/Download\ premium\ image\ of\ Abstract\ beige\ wallpaper\ background\ image\ \ by\ Nunny\ about\ mobile\ wallpaper\,\ mobile\ wallpaper\ aesthetic\,\ wallpaper\,\ earth\ tones\ iphone\ wallpaper\,\ and\ beige\ background\ 2620433.jfif);
+        padding: 10px;
+    }
+    header nav a {
+        display: none;
+    }
+
+    .container {
+        overflow: hidden;
+        max-width: 0 auto;
+    }
+
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-height: 50px;
+        overflow: hidden;
+    }
+
+    .bar {
+        width: 20%;
+        display: inline;
+        font-size: 40px;
+    }
+
+    section img {
+        width: 100%;
+        top: 180px;
+        left: -60px;
+    }
+
+    section {
+        max-width: 0 auto;
+        overflow: hidden;
+    }
+
+    header img {
+        width: 20%;
+    }
+
+    h1 {
+        text-align: center;
+        margin-left: -50px;
+        font-size: 100px;
+        margin-top: 25px;
+    }
+
+    button {
+        width: 150px;
+        height: 30px;
+        margin-right: 50px;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .social {
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+    
+}
+
+@media screen and (max-width : 550px) {
+    body {
+        background-color: gray;
+        background-image: none;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 65px;
+        margin-top: -70px;
+    }
+
+    .textContainer {
+        margin-top: 100px;
+    }
+
+    section img {
+        width: 100%;
+        top: 150px;
+        left: -60px;
+    }
+}
+
+@media screen and (max-width : 460px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width : 350px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    section img {
+        width: 100%;
+        top: 180px;
+        left: -40px;
+    }
+
+    .bar {
+        font-size: 30px;
+    }
+}
+
